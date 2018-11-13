@@ -3,22 +3,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                step {
-                    checkout scm
-                }
-                step {
-                    dir('java-web-app') {
-                        sh 'mvn -B clean verify'
-                    }
+                checkout scm
+                dir('java-web-app') {
+                    sh 'mvn -B clean verify'
                 }
             }
         }
         stage('Run Tests') {
             steps {
-                step {
-                    dir('java-web-app') {
-                        sh 'mvn test'
-                    }
+                dir('java-web-app') {
+                    sh 'mvn test'
                 }
             }
         }
