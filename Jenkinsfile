@@ -1,11 +1,13 @@
 pipeline {
     agent { docker 'maven:3-alpine' }
     stages {
-        dir('java-web-app') {
-            stage('Build') {
+        stage('Build') {
+            dir('java-web-app') {
                 sh 'mvn -B clean verify'
             }
-            stage('Run Tests') {
+        }
+        stage('Run Tests') {
+            dir('java-web-app') {
                 sh 'mvn test'
             }
         }
