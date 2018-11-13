@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-web-app",
+                "projectName": "java-web-app",
+                "workingDirectory": "/home/direside/projects/test-app/java-web-app",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-web-app",
+                "projectName": "java-web-app",
+                "workingDirectory": "/home/direside/projects/test-app/java-web-app",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
