@@ -17,3 +17,5 @@ mvn clean verify
 cd java-web-app
 mvn test
 ```
+
+Edit: Readme change for branch testing.
